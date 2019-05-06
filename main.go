@@ -27,10 +27,6 @@ func loadImage(path string) image.Image {
 	return img
 }
 
-func randPixel() uint8 {
-	return uint8(rand.Intn(255))
-}
-
 func generateLine(img *image.Image, newImg *image.RGBA) {
 	maxX := newImg.Bounds().Size().X
 	maxY := newImg.Bounds().Size().Y
